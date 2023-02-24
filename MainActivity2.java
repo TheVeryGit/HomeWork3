@@ -12,18 +12,18 @@ import com.example.firstproject.RailwayTicketOld;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    // создание объекта сущности взрослых билетов (стоимость билета, количество билетов)
+    
     RailwayTicket railwayTicket = new RailwayTicket(70, 9);
-    // создание объекта сущности детских билетов (стоимость билета, количество билетов, скидка)
+    
     RailwayTicket railwayTicketChild = new RailwayTicketChild(70, 11, 50);
 
     RailwayTicket railwayTicketOld = new RailwayTicketOld(70, 5 , 30);
 
-    // создание полей для вывода на экран нужных значений
-    private TextView railwayTicketOut; // поле вывода общей стоимости взрослых билетов
-    private TextView railwayTicketChildOut; // поле вывода общей стоимости детских билетов
-    private TextView railwayTicketTotalOut; // поле вывода общей стоимости всех билетов
-
+    
+    private TextView railwayTicketOut; 
+    private TextView railwayTicketChildOut; 
+    private TextView railwayTicketTotalOut; 
+    private TextView raiwayTicketOldOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
